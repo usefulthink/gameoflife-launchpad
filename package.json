@@ -1,0 +1,20 @@
+{
+  "name": "gameoflife-launchpad",
+  "version": "1.0.0",
+  "description": "game of life for the novation launchpad",
+  "main": "gameoflife-launchpad.js",
+  "scripts": {
+    "start": "nodemon -q -x 'babel-node gameoflife-launchpad'",
+    "test": "mocha --compilers js:babel/register test/*.js && eslint lib test"
+  },
+  "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "5.8.29",
+    "eslint": "^1.10.3",
+    "launchpadder": "0.0.5",
+    "mocha": "^2.3.4",
+    "nodemon": "1.8.1",
+    "unexpected": "^10.4.0"
+  }
+}
